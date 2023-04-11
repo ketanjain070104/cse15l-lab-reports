@@ -1,5 +1,5 @@
 # **LAB REPORT 1**
-Hello everyone, welcome to CSE 15L. This lab report mainly covers the procedure for installing VS Code, remotely connecting and trying some new commands.
+Hello everyone, welcome to CSE 15L. This lab report mainly covers the procedure for installing VS Code, remote connecting and trying some new commands.
 ## **Installing VS Code**
 To install VS Code, I visited the Visual Studio Code website https://code.visualstudio.com/, and followed the instructions to download and install it on my computer. 
 ![Image](Screenshot (15).png)
@@ -20,6 +20,10 @@ I responded 'yes' to the prompt after which I was prompted to input a password (
 ![Image](Screenshot (17).png)
 ## **Run Some Commands**
 After gaining access to the server, I got to run commands on the terminal. The commands gave me information regarding the directory I was in. A couple of commands didnot give output. This was because these commands changed the directory I was in and didnot produce any output. A couple of my commands produced outputs:
+
+`ls -lat`
+
+`ls -a`
 
 ![Image](Screenshot (18).png)
 
