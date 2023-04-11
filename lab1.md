@@ -7,8 +7,14 @@ I downloaded the Windows version for my laptop. When it was installed, it should
 ![Image](Screenshot (16).png)
 ## **Remotely Connecting**
 First of all, I found my course specific account and reset the password. Then, I tried remotely connecting to the ieng6 server. I started by running a ssh command on the terminal.
+
 `$ ssh cs15lsp23gb@ieng6.ucsd.edu`
+
 It led me to the following prompt where the system asked me to confirm my decision to connect to the server as I was connecting to it for the first time.
+
+`The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?`
 
 I responded 'yes' to the prompt after which I was prompted to input a password (the one that I set before) after which I gained access to the server. It looked like this on the terminal.
 ![Image](Screenshot (17).png)
