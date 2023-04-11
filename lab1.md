@@ -6,6 +6,9 @@ To install VS Code, I visited the Visual Studio Code website https://code.visual
 I downloaded the Windows version for my laptop. When it was installed, it should open a window that looks like this:
 ![Image](Screenshot (16).png)
 ## **Remotely Connecting**
-First of all, I found my course specific account and reset the password. Then, I tried remotely connecting to the ieng6 server. I started by running a ssh command on the terminal.
+First of all, I found my course specific account and reset the password. Then, I tried remotely connecting to the ieng6 server. I started by running a ssh command on the terminal. 
 $ ssh cs15lsp23gb@ieng6.ucsd.edu
+It led me to the following prompt where the system asked me to confirm my decision to connect to the server as I was connecting to it for the first time.
+
+
 
