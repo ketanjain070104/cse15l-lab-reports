@@ -19,7 +19,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?`
 I responded 'yes' to the prompt after which I was prompted to input a password (the one that I set before) after which I gained access to the server. It looked like this on the terminal.
 ![Image](Screenshot (17).png)
 ## **Run Some Commands**
-After gaining access to the server, I got to run commands on the terminal. The commands gave me information regarding the directory I was in. A couple of commands didnot give output. This was because these commands changed the directory I was in and didnot produce any output. A couple of my commands produced outputs:
+After gaining access to the server, I got to run commands on the terminal. The commands gave me information regarding the directory I was in. A couple of commands didnot give output. This was because these commands changed the directory I was in and didnot produce any output. The commands given below produced outputs:
 
 `ls -lat`
 
