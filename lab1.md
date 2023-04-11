@@ -11,6 +11,7 @@ First of all, I found my course specific account and reset the password. Then, I
 It led me to the following prompt where the system asked me to confirm my decision to connect to the server as I was connecting to it for the first time.
 
 I responded 'yes' to the prompt after which I was prompted to input a password (the one that I set before) after which I gained access to the server. It looked like this on the terminal.
-
-
+![Image](Screenshot (17).png)
+## **Run Some Commands**
+After gaining access to the server, I got to run commands on the terminal.
 
