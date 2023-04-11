@@ -3,4 +3,7 @@ Hello everyone, welcome to CSE 15L. This lab report mainly covers the procedure 
 ## **Installing VS Code**
 To install VS Code, I visited the Visual Studio Code website https://code.visualstudio.com/, and followed the instructions to download and install it on my computer. 
 ![Image](Screenshot (15).png)
-I downloaded the Windows version for my laptop. When it was installed, it should open a window that looks like this: 
+I downloaded the Windows version for my laptop. When it was installed, it should open a window that looks like this:
+![Image](Screenshot (16).png)
+## **Remotely Connecting**
+First of all, I 
