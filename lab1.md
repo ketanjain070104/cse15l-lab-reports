@@ -13,5 +13,7 @@ It led me to the following prompt where the system asked me to confirm my decisi
 I responded 'yes' to the prompt after which I was prompted to input a password (the one that I set before) after which I gained access to the server. It looked like this on the terminal.
 ![Image](Screenshot (17).png)
 ## **Run Some Commands**
-After gaining access to the server, I got to run commands on the terminal.
+After gaining access to the server, I got to run commands on the terminal. The commands gave me information regarding the directory I was in. A couple of commands didnot give output. This was because these commands changed the directory I was in and didnot produce any output. A couple of my commands produced outputs:
+
+![Image](Screenshot (18).png)
 
