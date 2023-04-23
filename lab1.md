@@ -25,5 +25,9 @@ After gaining access to the server, I got to run commands on the terminal. The c
 
 `ls -a`
 
+`echo` : The echo command is used to display a line of text that is passed in as an argument. This is a bash command that is mostly used in shell scripts to output status to the screen or to a file.
+
+`grep` : The grep command searches the given files for lines containing a match to a given pattern list. In other words, use the grep command to search phrases, numbers, data or strings in a text file.
+
 ![Image](Screenshot (18).png)
 
