@@ -1,7 +1,7 @@
 # **LAB REPORT 2**
 This report covers the guide to creation of a new server, my fix to a bug discussed in lab 3 and my experience and something new I learnt in these past 2 labs.
 ## **Part 1**
-The implementation of the described web server was somewhat similar to the Server.java and NumberServer.java file given to us in lab 2. I made some changes to these files, keeping most of the code similar. The code for the server looks as follows.
+The implementation of the described web server was somewhat similar to the Server.java and NumberServer.java file given to us in lab 2. I made some changes to these files, keeping most of the code similar. The code for the server looks as follows:
 ```
 # StringServer.java
 import java.io.IOException;
@@ -99,3 +99,4 @@ public class Server {
     }
 }
 ```
+The code for StringServer.java is quite similar to NumberServer.java and the code for Server.java is the same. The code gives the following input:
