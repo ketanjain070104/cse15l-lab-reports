@@ -107,68 +107,47 @@ When the URL `http://localhost:9000/add-message?s=How%20are%20you?` is inputted,
 ![Image](Screenshot (23).png)
 
 ## **Part 2**
-I chose a bug from ListExamples.java. The error in the code is that the method filter doesnt operate correctly all the time. A particular instance is 
+I took a bug in reversed() method of lab 3. One such instance is 
 ```
 @Test
-    public void testFilterManyCorrect(){
-        List<String> str1 = new ArrayList<>();
-        str1.add("apple");
-        str1.add("somelongstring");
-        str1.add("somelongstring2");
-        str1.add("somelongstring3");
-        str1.add("tinystring");       
-        
-        List<String> str2 = new ArrayList<>();
-        str2.add("somelongstring");
-        str2.add("somelongstring2");
-        str2.add("somelongstring3");
-        assertEquals(str2, ListExamples.filter(str1, new lengthGraterThan()));
-    }
+public void testReversed_2(){
+int[] input1 = {1, 2, 3, 4};
+int[] ary = ArrayExamples.reversed(input1);
+assertArrayEquals(new int[]{4, 3, 2, 1}, ary);
+}
 ```
-The code returns the correct output, despite being buggy, for some inputs
+The buggy code, however, produced correct outputs for certain inputs
 ```
 @Test
-    public void testFilterNoCorrect(){
-        List<String> str1 = new ArrayList<>();
-        str1.add("apple");
-        str1.add("tinystring");       
-        
-        List<String> str2 = new ArrayList<>();
-
-        assertEquals(str2, ListExamples.filter(str1, new lengthGraterThan()));
-    }
+public void testReversed_1(){
+int[] input1 = { };
+assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+}
 ```
 **Symptom**
-
-
-The order of the output filter is in reverse order of what it should be.
-
+The working case worked because it was an empty array list, so it passed as the reversed array would also be empty. However, in the case of the buggy test, the code failed because it was simply copying the numbers into the new array list rather than reversing the order.
 **Fix**
 ```
-# Before
-static List<String> filter(List<String> list, StringChecker sc) {
-    List<String> result = new ArrayList<>();
-    for(String s: list) {
-      if(sc.checkString(s)) {
-        result.add(0,s);
-      }
-    }
-    return result;
-  }
+#Before
+static int[] reversed(int[] arr){
+   int[] newArray = new int[arr.length];
+   for(int i = 0; i < arr.length; i += 1){
+     arr[i] = newArray[arr.length - i - 1];
+   }
+   return arr;
+}
 ```
 ```
-# After
-static List<String> filter(List<String> list, StringChecker sc) {
-    List<String> result = new ArrayList<>();
-    for(String s: list) {
-      if(sc.checkString(s)) {
-        result.add(s);
-      }
-    }
-    return result;
-  }
+#After
+static int[] reversed(int[] arr){
+   int[] newArray = new int[arr.length];
+   for(int i = 0; i < arr.length; i += 1){
+     newArray[i] = arr[arr.length - i - 1];
+   }
+   return newArray;
+}
 ```
-The function was adding elements at index '0' rather than adding them at the end of the list whihc was reversing the order of output as it should have been.
+It seems that the problem was that the method was not editing the created array list. By replacing arr and newArray, the reversed method creates a new array list and copies elements into that list in reverse order.
 
 ## **Part 3**
 I learnt how to work with GitHub desktop and how to push changes made to a git repository. I also learnt how to create a clone of the repository locally and then via GitHub Desktop, use VS Code to make changes to the code. These changes can be pushed onto the master file directly through the desktop app.
