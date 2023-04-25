@@ -147,6 +147,7 @@ static int[] reversed(int[] arr){
    return newArray;
 }
 ```
+![Image](Screenshot (25).png)
 It seems that the problem was that the method was not editing the created array list. By replacing arr and newArray, the reversed method creates a new array list and copies elements into that list in reverse order.
 
 ## **Part 3**
