@@ -100,7 +100,8 @@ public class Server {
 }
 ```
 The code for StringServer.java is quite similar to NumberServer.java and the code for Server.java is the same. The code gives the following input.
-
-When the URL `http://localhost:9000/add-message?s=Hello` is inputed, the handleRequest method in StringServer.java is called. It takes arguement 'url' of type 'URL' and returns a string array containing query in the url, split into two parts i.e. 'command' and 'string to be added' respectfully. This modifies of the global variable input to "Hello".
-
+![Image](Screenshot (21).png)
+When the URL `http://localhost:9000/add-message?s=Hello` is inputted, the handleRequest method in StringServer.java is called. It takes arguement 'url' of type 'URL' and returns a string array containing query in the url, split into two parts i.e. 'command' and 'string to be added' respectfully. This modifies of the global variable input to "Hello".
+![Image](Screenshot (22).png)
 When the URL `http://localhost:9000/add-message?s=How%20are%20you?` is inputted, the handleRequest method in StringServer.java is called again. It does the same thing as discussed above, i.e., it modifies the global variable input from "Hello" to "Hello /n How are you?". All these method calls are recorded in the terminal.
+![Image](Screenshot (23).png)
