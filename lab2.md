@@ -126,6 +126,7 @@ assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ```
 **Symptom**
 The working case worked because it was an empty array list, so it passed as the reversed array would also be empty. However, in the case of the buggy test, the code failed because it was simply copying the numbers into the new array list rather than reversing the order.
+
 **Fix**
 ```
 #Before
