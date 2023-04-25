@@ -105,3 +105,70 @@ When the URL `http://localhost:9000/add-message?s=Hello` is inputted, the handle
 ![Image](Screenshot (22).png)
 When the URL `http://localhost:9000/add-message?s=How%20are%20you?` is inputted, the handleRequest method in StringServer.java is called again. It does the same thing as discussed above, i.e., it modifies the global variable input from "Hello" to "Hello /n How are you?". All these method calls are recorded in the terminal.
 ![Image](Screenshot (23).png)
+
+## **Part 2**
+I chose a bug from ListExamples.java. The error in the code is that the method filter doesnt operate correctly all the time. A particular instance is 
+```
+@Test
+    public void testFilterManyCorrect(){
+        List<String> str1 = new ArrayList<>();
+        str1.add("apple");
+        str1.add("somelongstring");
+        str1.add("somelongstring2");
+        str1.add("somelongstring3");
+        str1.add("tinystring");       
+        
+        List<String> str2 = new ArrayList<>();
+        str2.add("somelongstring");
+        str2.add("somelongstring2");
+        str2.add("somelongstring3");
+        assertEquals(str2, ListExamples.filter(str1, new lengthGraterThan()));
+    }
+```
+The code returns the correct output, despite being buggy, for some inputs
+```
+@Test
+    public void testFilterNoCorrect(){
+        List<String> str1 = new ArrayList<>();
+        str1.add("apple");
+        str1.add("tinystring");       
+        
+        List<String> str2 = new ArrayList<>();
+
+        assertEquals(str2, ListExamples.filter(str1, new lengthGraterThan()));
+    }
+```
+**Symptom**
+
+
+The order of the output filter is in reverse order of what it should be.
+
+**Fix**
+```
+# Before
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0,s);
+      }
+    }
+    return result;
+  }
+```
+```
+# After
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+The function was adding elements at index '0' rather than adding them at the end of the list whihc was reversing the order of output as it should have been.
+
+## **Part 3**
+I learnt how to work with GitHub desktop and how to push changes made to a git repository. I also learnt how to create a clone of the repository locally and then via GitHub Desktop, use VS Code to make changes to the code. These changes can be pushed onto the master file directly through the desktop app.
