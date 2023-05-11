@@ -30,6 +30,8 @@ $ grep -n "Hazmi" 911report/chapter-6.txt
 360:            None of this information-about Mihdhar's U.S. visa or Hazmi's travel to the United
 ```
 
+Source [here](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
+
 ## **grep -c [Word] [File]**
 **What does it do?**
 
@@ -54,6 +56,8 @@ ketan@KINKY MINGW64 ~/Downloads/docsearch-main/technical
 $ grep -c "is" 911report/chapter-1.txt
 222
 ```
+
+Source [here](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
 
 ## **grep -r [Word] [Directory]**
 **What does it do?**
@@ -103,6 +107,8 @@ biomed/1475-2867-3-3.txt:        of cardiotoxicity but are not definitive.
 biomed/1475-2867-3-3.txt:        cardiotoxic effects of DOX chemotherapy [ 26 ] whereas
 biomed/1475-2867-3-3.txt:        cardiotoxicity [ 27 28 ] . Shinoyawa et al. [ 28 ] suggest
 ```
+
+Source [here](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
 
 ## **grep -i [Word] [File]**
 **What does it do?**
@@ -160,6 +166,8 @@ $ grep -i "war" 911report/chapter-10.txt
             President Bush argued that the new war went beyond Bin Ladin." Our war on terror
                 in a cave complex called Tora Bora. In March 2002, the largest engagement of the war
 ```
+
+Source [here](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
 
 
 
