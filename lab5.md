@@ -1,15 +1,20 @@
 # **LAB REPORT 5**
 ## Part 1
+Incorrect Code
 ![Image](Screenshot (67).png)
 
+Student posts a bug
 ![Image](Screenshot (68).png)
 
 ![Image](Screenshot (69).png)
 
+Response from tutor
 ![Image](Screenshot (70).png)
 
+Response from student
 ![Image](Screenshot (71).png)
 
+Correct implementation
 ![Image](Screenshot (72).png)
 
 ## Part 2
